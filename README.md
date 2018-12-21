@@ -12,6 +12,7 @@ I have tried to cover all requerimients requested:
 - Search
 - Movie details
 - Portrait/Landscape
+- Unit tests
 ## Clarifications/Improvements
 By time reasons in screens are missing refreshs (UIActivityIndicator) and show error messages if some error happens. By example at the moment to call API (UIAlertController).
 Besides, Search Bar coud disappear when scrolling.
