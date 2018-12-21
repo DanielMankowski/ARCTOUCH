@@ -8,18 +8,20 @@
 
 import Foundation
 
-protocol HomeDependency {
-    
+protocol HomeDependency: Dependency {
+    var apiClient: APIClientable { get }
 }
 
-final class HomeComponent: HomeDependency {
-    
+final class HomeComponent: Component<Void>, HomeDependency {
+    var apiClient: APIClientable {
+        return APIClient()
+    }
 }
 
-final class HomeBuilder {
-    func build() -> HomeRouter {
+final class HomeBuilder: Builder<HomeRouter, HomeDependency> {
+    override func build() -> HomeRouter {
         let vc = HomeViewController()
-        let viewModel = HomeViewModel(vc)
+        let viewModel = HomeViewModel(vc, apiClient: dependency.apiClient)
         let router = HomeRouter(viewModel: viewModel, viewController: vc)
         viewModel.listener = router
         vc.listener = viewModel

@@ -15,7 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        Appearance.setGlobalAppearence()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let homeRouter = HomeBuilder(dependency: HomeComponent(dependency: ())).build()
+        homeRouter.attachToRoot()
+        let navigationController = UINavigationController(rootViewController: homeRouter.viewController.uiViewController)
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
         return true
     }
 
@@ -41,6 +48,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    struct Appearance {
+        static func setGlobalAppearence() {
+            UINavigationBar.appearance().tintColor = .white
+            UINavigationBar.appearance().barTintColor = .blue
+            UINavigationBar.appearance().isTranslucent = false
+            UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        }
+    }
 }
 
