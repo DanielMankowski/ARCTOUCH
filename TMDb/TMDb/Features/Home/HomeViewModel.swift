@@ -21,13 +21,13 @@ HomeViewModelable,
 HomeViewControllerListener {
 
     weak var listener: HomeViewModelListener?
-    var genres: GenresDescription?
-    var movies: [Movie] = [Movie]()
-    var totalPages: Int = 0
-    var searchQuery: String? = nil
-    var totalMovies: Int = 0
-    var page: Int = 0
-    let apiClient: APIClientable
+    private var genres: GenresDescription?
+    private var movies: [Movie] = [Movie]()
+    private var totalPages: Int = 0
+    private var searchQuery: String? = nil
+    private var totalMovies: Int = 0
+    private var page: Int = 0
+    private let apiClient: APIClientable
     
     init(_ viewController: HomeViewControllable,
          apiClient: APIClientable) {

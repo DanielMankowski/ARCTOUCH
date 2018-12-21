@@ -9,12 +9,20 @@
 @testable import TMDb
 
 class APIClientMock: APIClientable {
+    
     var getUpcomingMoviesCallCount: Int = 0
-    var getUpcomingMoviesHandler: ((Int?, String?, (UpcomingMovies?)->Void)->())? = nil
+    var getUpcomingMoviesHandler: ((Int?, (UpcomingMovies?)->Void)->())? = nil
+    var searchMoviesCallCount: Int = 0
+    var searchMoviesHandler: ((String, (UpcomingMovies?)->Void)->())? = nil
     
     
-    func getUpcomingMovies(page: Int? = nil, searchTerm: String?, completion: @escaping (UpcomingMovies?)->Void) {
+    func getUpcomingMovies(page: Int?, completion: @escaping (UpcomingMovies?) -> Void) {
         getUpcomingMoviesCallCount += 1
-//        if let returnValue = getUpcomingMoviesHandler(page, searchTerm, completion)
+        if let returnValue = getUpcomingMoviesHandler?(page, completion) { return returnValue }
+    }
+    
+    func searchMovies(searchTerm: String, completion: @escaping (UpcomingMovies?) -> Void) {
+        searchMoviesCallCount += 1
+        if let returnValue = searchMoviesHandler?(searchTerm, completion) { return returnValue }
     }
 }

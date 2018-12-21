@@ -12,7 +12,7 @@
 		2EC7B77821C680F200203F60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC7B77621C680F200203F60 /* Main.storyboard */; };
 		2EC7B77A21C680F300203F60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EC7B77921C680F300203F60 /* Assets.xcassets */; };
 		2EC7B77D21C680F300203F60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC7B77B21C680F300203F60 /* LaunchScreen.storyboard */; };
-		2EC7B78821C680F300203F60 /* TMDbTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7B78721C680F300203F60 /* TMDbTests.swift */; };
+		2EC7B78821C680F300203F60 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7B78721C680F300203F60 /* HomeViewModelTests.swift */; };
 		2EC7B79321C680F300203F60 /* TMDbUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7B79221C680F300203F60 /* TMDbUITests.swift */; };
 		2EC7B7A221C6827600203F60 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7B7A021C6827600203F60 /* HomeViewController.swift */; };
 		2EC7B7A321C6827600203F60 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EC7B7A121C6827600203F60 /* HomeViewController.xib */; };
@@ -37,6 +37,9 @@
 		2EC7B7E521C95A4100203F60 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7B7E421C95A4100203F60 /* DetailRouter.swift */; };
 		2EC7B7E721C95B8600203F60 /* DetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7B7E621C95B8600203F60 /* DetailBuilder.swift */; };
 		2EC7B7EA21CBF8DA00203F60 /* APIClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7B7E921CBF8DA00203F60 /* APIClientMock.swift */; };
+		2EC7B7EE21CC837800203F60 /* HomeViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7B7ED21CC837800203F60 /* HomeViewControllerMock.swift */; };
+		2EC7B7F021CC879700203F60 /* ViewControllableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7B7EF21CC879700203F60 /* ViewControllableMock.swift */; };
+		2EC7B7F221CC8C7E00203F60 /* HomeViewModelListenerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7B7F121CC8C7E00203F60 /* HomeViewModelListenerMock.swift */; };
 		BDC6C1BACD63E257BE52D4EF /* Pods_TMDbTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB4576B19DDC38C84CD98B8 /* Pods_TMDbTests.framework */; };
 		FD8B56A4880EA5DD98ADD288 /* Pods_TMDbUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 473154DA31A582DEDD965356 /* Pods_TMDbUITests.framework */; };
 /* End PBXBuildFile section */
@@ -67,7 +70,7 @@
 		2EC7B77C21C680F300203F60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2EC7B77E21C680F300203F60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EC7B78321C680F300203F60 /* TMDbTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMDbTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2EC7B78721C680F300203F60 /* TMDbTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDbTests.swift; sourceTree = "<group>"; };
+		2EC7B78721C680F300203F60 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		2EC7B78921C680F300203F60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EC7B78E21C680F300203F60 /* TMDbUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMDbUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC7B79221C680F300203F60 /* TMDbUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDbUITests.swift; sourceTree = "<group>"; };
@@ -95,6 +98,9 @@
 		2EC7B7E421C95A4100203F60 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
 		2EC7B7E621C95B8600203F60 /* DetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBuilder.swift; sourceTree = "<group>"; };
 		2EC7B7E921CBF8DA00203F60 /* APIClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientMock.swift; sourceTree = "<group>"; };
+		2EC7B7ED21CC837800203F60 /* HomeViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerMock.swift; sourceTree = "<group>"; };
+		2EC7B7EF21CC879700203F60 /* ViewControllableMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllableMock.swift; sourceTree = "<group>"; };
+		2EC7B7F121CC8C7E00203F60 /* HomeViewModelListenerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelListenerMock.swift; sourceTree = "<group>"; };
 		3A0EB4F6F4030C306C3843F2 /* Pods-TMDbUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDbUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TMDbUITests/Pods-TMDbUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		473154DA31A582DEDD965356 /* Pods_TMDbUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMDbUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		504BF26E1E7DE586B736502C /* Pods-TMDbUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDbUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TMDbUITests/Pods-TMDbUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -186,7 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				2EC7B7E821CBF89400203F60 /* Mocks */,
-				2EC7B78721C680F300203F60 /* TMDbTests.swift */,
+				2EC7B78721C680F300203F60 /* HomeViewModelTests.swift */,
 				2EC7B78921C680F300203F60 /* Info.plist */,
 			);
 			path = TMDbTests;
@@ -278,6 +284,9 @@
 			isa = PBXGroup;
 			children = (
 				2EC7B7E921CBF8DA00203F60 /* APIClientMock.swift */,
+				2EC7B7ED21CC837800203F60 /* HomeViewControllerMock.swift */,
+				2EC7B7EF21CC879700203F60 /* ViewControllableMock.swift */,
+				2EC7B7F121CC8C7E00203F60 /* HomeViewModelListenerMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -553,8 +562,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EC7B78821C680F300203F60 /* TMDbTests.swift in Sources */,
+				2EC7B78821C680F300203F60 /* HomeViewModelTests.swift in Sources */,
 				2EC7B7EA21CBF8DA00203F60 /* APIClientMock.swift in Sources */,
+				2EC7B7F221CC8C7E00203F60 /* HomeViewModelListenerMock.swift in Sources */,
+				2EC7B7EE21CC837800203F60 /* HomeViewControllerMock.swift in Sources */,
+				2EC7B7F021CC879700203F60 /* ViewControllableMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
