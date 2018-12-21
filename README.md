@@ -5,7 +5,7 @@ I have chosen RMVVM architecture to make the project, always trying to meet SOLI
 ## Technical Details
 In order to demonstrate knowledgment I think that the most appropiate way to do the project is as native as possible, so I am going to list the components that I have used.
 - For API calls: **Alamofire**. For simplicity in Network request(when dowload proyect, please do not foget to execute pod install in console).
-- For download images: I have used SDWebImage library, added to project by CocoaPods. (when dowload proyect, please do not foget to execute pod install in console)
+- For download images: I have used **SDWebImage** library, added to project by CocoaPods. (when dowload proyect, please do not foget to execute pod install in console)
 ## Requirements
 I have tried to cover all requerimients requested:
 - Paging
